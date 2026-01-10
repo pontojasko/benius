@@ -11,7 +11,7 @@
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono); */
  --text-shadow-drop: -10px 5px 0px rgb(10 10 0 / 0.075);
- --text-shadow-minidrop: -1px 1px 0px rgb(100 10 0 / 0.050);
+ --text-shadow-minidrop: -1px 1px 0px rgb(0 10 0 / 0.050);
  --color-foreground-900: #ab7f27;
   --text-title: 10rem;
   --color-background-900: #1d2021;
@@ -19,6 +19,8 @@
 
 
 }
+
+
 
 @media (prefers-color-scheme: dark) {
   /* root {
