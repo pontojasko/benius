@@ -17,10 +17,11 @@ export default function Home() {
       xl:max-w-[22svw] 
       md:max-w-[30svw]
       sm:max-w-[50svw]
-      h-svh w-svw max-h-[40svh] max-w-[70svw] shadow-xl/0
+      h-svh w-svw max-h-[40svh] max-w-[70svw] shadow-drop/100
 
        ">
-              <p className="text-gameboy-1 text-3xl text-shadow-minidrop/80">Aqui dentro teria um textinho</p>
+              <p className="text-gameboy-1 text-3xl text-shadow-minidrop">
+                ainda to pensando em quantos caracteres isso vai suportar. tem que ser menos que 64</p>
         </div>
 
         </div>
@@ -29,8 +30,8 @@ export default function Home() {
         <footer className="flex justify-center items-baseline-last h-1/4 w-screen bg-gameboy-3">
         
            <div className=" overflow-hidden flex justify-center items-center h-1/2 w-screen bg-gameboy-4">
-              <p className="text-gameboy-1 text-2xl text-shadow-minidrop/100">by 
-              <a href=" https://jasko.dev"className="text-gameboy-4tracking-tighter transition-all hover:text-[1.6rem]"> JASKO ^^</a></p>
+              <p className="text-gameboy-1 text-2xl text-shadow-minidrop/50">
+              <a href=" https://jasko.dev"className="text-gameboy-4tracking-tighter transition-all hover:text-[1.6rem]">jasko! ^^</a></p>
             </div>
 
         </footer>

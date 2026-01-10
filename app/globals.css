@@ -11,7 +11,8 @@
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono); */
  --text-shadow-drop: -10px 5px 0px rgb(15 56 0 / 0.075);
- --text-shadow-minidrop: -1px 1px 0px rgb(0 10 0 / 0.050);
+ --text-shadow-minidrop: -2px 5px 0px rgb(3 10 3 / 0.3);
+ --shadow-drop: -10px 10px 0px rgb(3 10 3 / 0.230);
  --color-foreground-900: #3b7a2c;
   --text-title: 10rem;
   --color-gameboy-1: #9bbc0f;
