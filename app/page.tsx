@@ -4,7 +4,7 @@ export default function Home() {
   return (
 
     
-    <div className="h-screen">
+    <div className="min-h-svh h-svh">
          <header className="flex justify-center items-baseline-last h-1/4 w-screen  bg-background-900 shadow-2xl/10 ">
       
             <h1 className="text-title text-shadow-drop/100 tracking-tighter ">
