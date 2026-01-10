@@ -7,7 +7,7 @@ export default function Home() {
     <div className="min-h-svh h-svh overflow-hidden">
          <header className="p-10 overflow-hidden flex justify-center items-center h-1/4 w-screen  bg-background-900 shadow-2xl/10 ">
       
-            <h1 className=" text-title text-shadow-drop/100 tracking-tighter ">
+            <h1 className=" text-9xl md:text-title text-shadow-drop/100 tracking-tighter ">
               Benius
             </h1>
         </header>
