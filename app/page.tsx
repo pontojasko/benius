@@ -30,7 +30,7 @@ export default async function Home() {
       xl:max-w-[22svw] 
       md:max-w-[30svw]
       sm:max-w-[50svw]
-      h-svh w-svw max-h-[40svh] ax-w-[70svw] shadow-drop/100
+      h-svh w-svw max-h-[40svh] max-w-[70svw] shadow-drop/100
 
        ">
               <p className="text-gameboy-1 text-3xl text-shadow-minidrop">
