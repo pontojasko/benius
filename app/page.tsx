@@ -8,7 +8,7 @@ import Image from "next/image";
 
 
 export default async function Home() {
-  let data = await fetch('http://129.213.109.208:8080/mensagem', {cache: 'no-store' })
+  let data = await fetch('https://api-benius.jasko.dev/mensagem', {cache: 'no-store' })
   let json = await data.json()
 
 
