@@ -1,6 +1,19 @@
+
+
 import Image from "next/image";
 
-export default function Home() {
+
+
+
+
+
+export default async function Home() {
+  let data = await fetch('http://129.213.109.208:8080/mensagem')
+  let json = await data.json()
+
+
+
+
   return (
 
     
@@ -17,11 +30,17 @@ export default function Home() {
       xl:max-w-[22svw] 
       md:max-w-[30svw]
       sm:max-w-[50svw]
-      h-svh w-svw max-h-[40svh] max-w-[70svw] shadow-drop/100
+      h-svh w-svw max-h-[40svh] ax-w-[70svw] shadow-drop/100
 
        ">
               <p className="text-gameboy-1 text-3xl text-shadow-minidrop">
-                ainda to pensando em quantos caracteres isso vai suportar. tem que ser menos que 64</p>
+               
+                   
+                    {json.texto}
+                    {/* {json.criado} */}
+    
+               
+                </p>
         </div>
 
         </div>
