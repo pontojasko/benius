@@ -29,7 +29,7 @@ return (
         <div className="flex justify-center items-center w-full xl:h-3/6 h-full">
         <textarea onKeyDown={(e) => { if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault();  } }}
                   maxLength={90} placeholder={"Qual é a má notícia?"} autoFocus spellCheck={false}
-          className="text-gameboy-1 text-3xl  text-shadow-minidrop outline-none h-full w-full overflow-hidden resize-none">
+          className="text-gameboy-1 text-2xl text-shadow-minidrop outline-none h-full w-full overflow-hidden resize-none">
         </textarea>
         {/* <p> pressione enter</p> */}
         </div>
