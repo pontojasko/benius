@@ -27,7 +27,7 @@ return (
 
                
                    
-                    Modo de diçao
+                    modo de edicao
     
                
                 </p> : <p className="text-gameboy-1 text-3xl text-shadow-minidrop" onClick={edit} >
