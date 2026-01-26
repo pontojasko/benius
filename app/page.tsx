@@ -1,8 +1,4 @@
-
-import PostIt from "./components/post-it";
 import PostItVisual from "./components/post-it-visual";
-
-
 
 export default async function Home() {
     const data = await fetch('https://api-benius.jasko.dev/mensagem', {cache: 'no-store' })
