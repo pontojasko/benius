@@ -22,11 +22,11 @@ export default async function Home() {
         </div>
 
 
-        <footer className="grid grid-rows-2 gap-y-5 justify-center  h-1/4 bg-gameboy-3">
+        <footer className="grid grid-rows-2 justify-center  h-1/4 bg-gameboy-3">
         
            <div className=" overflow-hidden flex justify-center items-center w-screen bg-gameboy-3">
               <i className=" text-center text-sm text-gameboy-4 tracking-tighter leading-tight select-none">
-              pressione duas vezes <br></br> e envie sua notícia</i>
+              pressione duas vezes <br></br> e envie  sua notícia</i>
             </div>
 
                       <div className=" overflow-hidden flex justify-center items-center w-screen bg-gameboy-4">
