@@ -20,7 +20,7 @@ export default function PostItVisual(props: PostItProps) {
 
 return (
 <div className="
-      flex justify-center items-center overflow-hidden sm:p-12 p-8 bg-gameboy-4
+      flex justify-center items-center overflow-hidden md:p-12 p-7 bg-gameboy-4
       xl:max-h-[40svh] md:max-h-[40svh] sm:max-h-[40svh]
       h-svh max-h-[35svh] shadow-drop/100 aspect-square
 
@@ -34,7 +34,7 @@ return (
         {/* <p> pressione enter</p> */}
         </div>
         :
-        <p title="Dois cliques para enviar a sua má notícia!" className="text-gameboy-1 text-3xl text-shadow-minidrop" onDoubleClick={edit}>{props.texto}</p>}
+        <p title="Dois cliques para enviar a sua má notícia!" className="text-gameboy-1 text-[clamp(1rem,4vmin,2.5rem)] leading-tight tracking-tight text-shadow-minidrop" onDoubleClick={edit}>{props.texto}</p>}
               
         </div>
 
