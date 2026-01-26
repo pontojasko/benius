@@ -1,5 +1,6 @@
 'use client'
 import { useState } from "react";
+import sexo from "../actions";
 
 
 interface PostItProps {
@@ -26,7 +27,7 @@ return (
 
        ">
         {editing ? 
-        <div className="grid grid-rows-[auto_1fr_auto] justify-center items-center w-full  h-full">
+        <form className="grid grid-rows-[auto_1fr_auto] justify-center items-center w-full  h-full">
           <div className="flex justify-items items-center">
 
                 <p></p>
@@ -34,19 +35,30 @@ return (
           </div>
                   
           <div className="flex justify-items items-center h-full">
-
-                      <textarea onKeyDown={(e) => { if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault();  } }}
-                            maxLength={90} placeholder={"Qual é a má notícia?"} autoFocus spellCheck={false}
+                  
+                      <textarea onKeyDown={(e) => { 
+                                                    if (e.key === 'Enter' && !e.shiftKey) { 
+                                                      e.preventDefault(); 
+                                                    
+                                                      const btn = e.currentTarget.form?.querySelector('button[type="submit"]') as HTMLButtonElement;
+                                                      
+                                                      if (btn) {
+                                                        btn.click();
+                                                        setEditing(false);
+                                                      }
+                                                    } 
+                                                  }}
+                            name="campo" maxLength={90} placeholder={"Qual é a má notícia?"} autoFocus spellCheck={false}
                             className="text-gameboy-1 sm:text-4xl text-2xl text-shadow-minidrop outline-none leading-tight tracking-tight w-full h-full overflow-hidden resize-none">
                       </textarea>
             </div>
 
             <div className="flex justify-end w-full">
-                      <button type="submit" className="sm:text-2xl text-1xl outline-none cursor-pointer leading-tight tracking-tight select-none text-shadow-minidrop hover:text-gameboy-2 ">&gt; Enter</button>
+                      <button formAction={sexo} type="submit" className="sm:text-2xl text-1xl outline-none cursor-pointer leading-tight tracking-tight select-none text-shadow-minidrop hover:text-gameboy-2 ">&gt; Enter</button>
               </div>
 
 
-        </div>
+        </form>
 
 
 

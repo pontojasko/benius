@@ -1,10 +1,12 @@
 
 import PostIt from "./components/post-it";
-
+import PostItVisual from "./components/post-it-visual";
 
 
 
 export default async function Home() {
+    const data = await fetch('https://api-benius.jasko.dev/mensagem', {cache: 'no-store' })
+  const json = await data.json()
 
 
   return (
@@ -18,7 +20,7 @@ export default async function Home() {
             </h1>
         </header>
         <div className="flex justify-center items-center  w-screen h-1/2 bg-gameboy-2  ">
-          <PostIt/>
+            <PostItVisual texto={json.texto}/>
         </div>
 
 
@@ -26,7 +28,7 @@ export default async function Home() {
         
            <div className=" overflow-hidden flex justify-center items-center w-screen bg-gameboy-3">
               <i className=" text-center text-sm text-gameboy-4 tracking-tighter leading-tight select-none">
-              pressione duas vezes <br></br> e envie  sua notícia</i>
+              pressione duas vezes <br></br> e me mostre o que quiser!</i>
             </div>
 
                       <div className=" overflow-hidden flex justify-center items-center w-screen bg-gameboy-4">
