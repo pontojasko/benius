@@ -34,7 +34,7 @@ return (
         {/* <p> pressione enter</p> */}
         </div>
         :
-        <p title="Dois cliques para enviar a sua má notícia!" className="text-gameboy-1 text-[clamp(1rem,4vmin,2.5rem)] leading-tight tracking-tight text-shadow-minidrop" onDoubleClick={edit}>{props.texto}</p>}
+        <p title="Dois cliques para enviar a sua má notícia!" className="text-gameboy-1 text-[clamp(1.5rem,4vmin,2.5rem)] leading-tight tracking-tight text-shadow-minidrop" onDoubleClick={edit}>{props.texto}</p>}
               
         </div>
 
