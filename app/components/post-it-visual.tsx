@@ -37,7 +37,7 @@ return (
 
                       <textarea onKeyDown={(e) => { if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault();  } }}
                             maxLength={90} placeholder={"Qual é a má notícia?"} autoFocus spellCheck={false}
-                            className="text-gameboy-1 sm:text-4xl text-1xl text-shadow-minidrop outline-none leading-tight tracking-tight w-full h-full overflow-hidden resize-none">
+                            className="text-gameboy-1 sm:text-4xl text-2xl text-shadow-minidrop outline-none leading-tight tracking-tight w-full h-full overflow-hidden resize-none">
                       </textarea>
             </div>
 
