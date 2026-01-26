@@ -26,12 +26,12 @@ return (
 
        ">
         {editing ? 
-        <div className="flex justify-center items-center w-full xl:h-3/6 h-full">
+        <div className="flex justify-center items-center w-full  h-full">
         <textarea onKeyDown={(e) => { if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault();  } }}
                   maxLength={90} placeholder={"Qual é a má notícia?"} autoFocus spellCheck={false}
-          className="text-gameboy-1 text-2xl text-shadow-minidrop outline-none h-full w-full overflow-hidden resize-none">
+          className="text-gameboy-1 xl:text-4xl text-2xl text-shadow-minidrop outline-none leading-tight tracking-tight h-full w-full overflow-hidden resize-none">
         </textarea>
-        {/* <p> pressione enter</p> */}
+
         </div>
         :
         <p title="Dois cliques para enviar a sua má notícia!" className="text-gameboy-1 text-[clamp(1.5rem,4vmin,2.5rem)] leading-tight tracking-tight text-shadow-minidrop" onDoubleClick={edit}>{props.texto}</p>}
