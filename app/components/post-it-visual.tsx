@@ -20,7 +20,7 @@ export default function PostItVisual(props: PostItProps) {
 
 return (
 <div className="
-      flex justify-center items-center overflow-hidden p-12 bg-gameboy-4
+      flex justify-center items-center overflow-hidden sm:p-12 p-8 bg-gameboy-4
       xl:max-h-[40svh] md:max-h-[40svh] sm:max-h-[40svh]
       h-svh max-h-[35svh] shadow-drop/100 aspect-square
 
