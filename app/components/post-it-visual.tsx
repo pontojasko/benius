@@ -42,7 +42,7 @@ return (
             </div>
 
             <div className="flex justify-end w-full">
-                      <button type="submit" className="sm:text-2xl text-1xl outline-none cursor-pointer leading-tight tracking-tight select-none text-shadow-minidrop">&gt; Enter</button>
+                      <button type="submit" className="sm:text-2xl text-1xl outline-none cursor-pointer leading-tight tracking-tight select-none text-shadow-minidrop hover:text-gameboy-2 ">&gt; Enter</button>
               </div>
 
 

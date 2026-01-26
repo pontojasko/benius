@@ -31,7 +31,7 @@ export default async function Home() {
 
                       <div className=" overflow-hidden flex justify-center items-center w-screen bg-gameboy-4">
               <p className="text-gameboy-1 text-2xl text-shadow-minidrop/50 select-none">
-              <a href=" https://jasko.dev"className="text-gameboy-4tracking-tighter transition-all hover:text-[1.6rem]">jasko! ^^</a></p>
+              <a href=" https://jasko.dev"className="text-gameboy-1 tracking-tighter hover:text-gameboy-2 ">jasko! ^^</a></p>
             </div>
 
         </footer>
