@@ -7,9 +7,12 @@ import Image from "next/image";
 
 
 
+
 export default async function Home() {
-  let data = await fetch('https://api-benius.jasko.dev/mensagem', {cache: 'no-store' })
-  let json = await data.json()
+  const data = await fetch('https://api-benius.jasko.dev/mensagem', {cache: 'no-store' })
+  const json = await data.json()
+
+
 
 
 
