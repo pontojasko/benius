@@ -1,20 +1,10 @@
 
-
-import Image from "next/image";
-
-
-
+import PostIt from "./components/post-it";
 
 
 
 
 export default async function Home() {
-  const data = await fetch('https://api-benius.jasko.dev/mensagem', {cache: 'no-store' })
-  const json = await data.json()
-
-
-
-
 
 
   return (
@@ -28,22 +18,7 @@ export default async function Home() {
             </h1>
         </header>
         <div className="flex justify-center items-center  w-screen h-1/2 bg-gameboy-2  ">
-      <div className="
-      flex justify-center items-center overflow-hidden p-10 bg-gameboy-4
-      xl:max-h-[40svh] md:max-h-[40svh] sm:max-h-[40svh]
-      h-svh max-h-[35svh] shadow-drop/100 aspect-square
-
-       ">
-              <p className="text-gameboy-1 text-3xl text-shadow-minidrop">
-               
-                   
-                    {json.texto}
-                    {/* {json.criado} */}
-    
-               
-                </p>
-        </div>
-
+          <PostIt/>
         </div>
 
 
