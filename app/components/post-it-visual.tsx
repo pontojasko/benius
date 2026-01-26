@@ -26,9 +26,9 @@ return (
 
        ">
         {editing ? 
-        <div>
+        <div className=" w-full h-full">
         <textarea onKeyDown={(e) => { if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault();  } }} maxLength={90} placeholder={"Qual é a má notícia?"} autoFocus
-          className="text-gameboy-1 text-3xl text-shadow-minidrop outline-none h-3/4 overflow-hidden resize-none">
+          className="text-gameboy-1 text-3xl  text-shadow-minidrop outline-none h-full w-full overflow-hidden resize-none">
         </textarea>
         </div>
         :
