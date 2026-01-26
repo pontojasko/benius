@@ -22,10 +22,15 @@ export default async function Home() {
         </div>
 
 
-        <footer className="flex justify-center items-baseline-last h-1/4 w-screen bg-gameboy-3">
+        <footer className="grid grid-rows-2 gap-y-5 justify-center  h-1/4 bg-gameboy-3">
         
-           <div className=" overflow-hidden flex justify-center items-center h-1/2 w-screen bg-gameboy-4">
-              <p className="text-gameboy-1 text-2xl text-shadow-minidrop/50">
+           <div className=" overflow-hidden flex justify-center items-center w-screen bg-gameboy-3">
+              <i className=" text-center text-sm text-gameboy-4 tracking-tighter leading-tight select-none">
+              pressione duas vezes <br></br> e envie sua notícia</i>
+            </div>
+
+                      <div className=" overflow-hidden flex justify-center items-center w-screen bg-gameboy-4">
+              <p className="text-gameboy-1 text-2xl text-shadow-minidrop/50 select-none">
               <a href=" https://jasko.dev"className="text-gameboy-4tracking-tighter transition-all hover:text-[1.6rem]">jasko! ^^</a></p>
             </div>
 
