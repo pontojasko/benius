@@ -13,11 +13,18 @@ export default async function sexo(formData: FormData){
         headers: { 'Content-Type': 'application/json' }
     };
 
+    //     if (textoDigitado === ""){
+    //     return
+    // }
+ 
+
+            if (!textoDigitado.trim()) {
+            return;
+            }
     
     const res = await fetch('https://api-benius.jasko.dev/mensagens', opcoes)
 
 
- 
     
 
 }
