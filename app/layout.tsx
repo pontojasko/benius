@@ -22,6 +22,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br">
+      <head>
+        <meta property="og:image"></meta>
+      </head>
       <body className={`${tiny.className} antialiased`}
       >
 
