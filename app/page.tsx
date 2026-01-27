@@ -15,8 +15,16 @@ export default async function Home() {
               Benius
             </h1>
         </header>
-        <div className="flex justify-center items-center  w-screen h-1/2 bg-gameboy-2  ">
-            <PostItVisual texto={json.texto}/>
+        <div className="grid grid-cols-[auto_1fr_auto] justify-center items-center  w-screen h-1/2 bg-gameboy-2  ">
+            <div></div> {/* div pra dar espaço lateral esquerdo */}
+            <div className="flex justify-center"> {/* div pra aglobar tudo e centralizar */}
+              <div className="flex-1"></div> {/* div pra dar espaço editavel lateral esquerdo */}
+              <PostItVisual texto={json.texto}/>
+              <div className="flex-1"> {/* div pra dar espaço editavel lateral direito */}
+              </div>
+              </div>
+              <div></div>
+
         </div>
 
 
