@@ -12,8 +12,21 @@ const tiny = Tiny5({
 
 export const metadata: Metadata = {
   title: "Benius",
-  description: "By Jasko",
+  description: "by Jasko",
+  openGraph: {
+    title: "Benius",
+    description: "by Jasko",
+    url: "https://benius.jasko.dev",
+    siteName: "Benius",
+    locale: "pt_BR",
+    type: "website",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
+
 
 export default function RootLayout({
   children,
