@@ -32,7 +32,7 @@ export default async function Home() {
         
            <div className=" overflow-hidden flex justify-center items-center w-screen bg-gameboy-3">
               <i className=" text-center text-sm text-gameboy-4 tracking-tighter leading-tight select-none">
-              pressione duas vezes <br></br> e me mostre o que quiser!</i>
+              aperte duas vezes no post-it <br></br> e me mostre o que quiser!</i>
             </div>
 
                       <div className=" overflow-hidden flex justify-center items-center w-screen bg-gameboy-4">

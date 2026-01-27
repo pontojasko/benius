@@ -20,10 +20,10 @@ export default function PostItVisual(props: PostItProps) {
   
 
 return (
-<div className="relative
+<div onDoubleClick={edit} className="relative
       flex justify-center items-center overflow-hidden p-[clamp(1rem,5vw,3rem)] bg-gameboy-4
       xl:max-h-[40svh] md:max-h-[40svh] sm:max-h-[40svh]
-      h-svh max-h-[35svh] shadow-drop/100 aspect-square
+      h-svh max-h-[35svh] shadow-drop/100 aspect-square active:bg-green-950
 
        ">
         {editing ? 
@@ -66,6 +66,7 @@ return (
 
 
         :
+
         <p title="Dois cliques para enviar a sua má notícia!" className="text-gameboy-1 text-[clamp(1.5rem,4vmin,2.5rem)] leading-tight tracking-tight text-shadow-minidrop" onDoubleClick={edit}>{props.texto}</p>}
               
               
