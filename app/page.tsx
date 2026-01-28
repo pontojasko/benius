@@ -1,5 +1,6 @@
 import PostItVisual from "./components/post-it-visual";
 
+
 export default async function Home() {
     const data = await fetch('https://api-benius.jasko.dev/mensagem', {cache: 'no-store' })
   const json = await data.json()
@@ -15,7 +16,7 @@ export default async function Home() {
               Benius
             </h1>
         </header>
-        <div className="grid grid-cols-[auto_1fr_auto] justify-center items-center  w-screen h-1/2 bg-gameboy-2  ">
+        <main className="grid grid-cols-[auto_1fr_auto] justify-center items-center  w-screen h-1/2 bg-gameboy-2  ">
             <div></div> {/* div pra dar espaço lateral esquerdo */}
             <div className="flex justify-center"> {/* div pra aglobar tudo e centralizar */}
               <div className="flex-1"></div> {/* div pra dar espaço editavel lateral esquerdo */}
@@ -25,7 +26,7 @@ export default async function Home() {
               </div>
               <div></div>
 
-        </div>
+        </main>
 
 
         <footer className="grid grid-rows-2 justify-center  h-1/4 bg-gameboy-3">
