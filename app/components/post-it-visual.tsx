@@ -27,7 +27,7 @@ export default function PostItVisual(props: PostItProps) {
 return (
 <div onClick={refresh} onDoubleClick={edit} className="relative
       flex justify-center items-center overflow-hidden p-[clamp(1rem,5vw,3rem)] bg-gameboy-4
-      xl:max-h-[40svh] md:max-h-[40svh] sm:max-h-[40svh]
+      xl:max-h-[40svh]
       h-svh max-h-[35svh] shadow-drop/100 aspect-square active:bg-green-950
 
        ">
