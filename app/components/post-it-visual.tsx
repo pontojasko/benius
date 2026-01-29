@@ -8,10 +8,8 @@ interface PostItProps {
   editmode?: boolean;
   debugmode?: boolean;
   id?: string;
+  criado?: any;  //zoado
 }
-
-
-
 
 export default function PostItVisual(props: PostItProps) {
 
@@ -20,7 +18,7 @@ export default function PostItVisual(props: PostItProps) {
 
   const edit = () =>{
     // setEditing(true);
-    if (props.editmode === false){
+    if (debug === true){
       return;
     }
     else { 
@@ -32,8 +30,15 @@ export default function PostItVisual(props: PostItProps) {
   const refresh = ()=>{
     router.refresh();
   }
+const mtfdate = new Date(props.criado);
+let dateoptions:Intl.DateTimeFormatOptions =
+{ year: "numeric",
+  month: "numeric",
+  day: "numeric",
+  hour: "numeric",
+  minute: "numeric"};
+const mtfdate2 = props.criado ? new Intl.DateTimeFormat("pt-BR", dateoptions).format(mtfdate) : "---";
 
-  
 
 return (
 <div onClick={refresh} onDoubleClick={edit} className="relative
@@ -85,8 +90,11 @@ return (
           <div>                                          
         <p className="text-gameboy-1 text-[clamp(1.5rem,4vmin,2.5rem)] leading-tight tracking-tight text-shadow-minidrop" onDoubleClick={edit}>{props.texto}</p>
         
-        {debug ? <p>{props.id}</p>
-        : <p></p>
+        {debug ? <div className="text-2xl">
+           <p >{props.id} </p> <p className="bg-green-950 w-fit">  {mtfdate2} </p>
+           
+           </div>
+        : <div></div>
         }                                  </div>
         }
               

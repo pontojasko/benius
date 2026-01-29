@@ -4,10 +4,16 @@ export default async function Admin(){
     const data = await fetch('https://api-benius.jasko.dev/mensagens', {cache: 'no-store' })
     const json = await data.json();
   
+
+
+
     interface postit {
         id: string;
         texto: string;
+        criado: string;
     }
+
+
 
 
     return (
@@ -20,7 +26,7 @@ export default async function Admin(){
 
                     {json.map((postit:postit) => 
                         <div key={postit.id}>
-                            <PostItVisual debugmode={true} editmode={false} id={postit.id} texto={postit.texto}/>
+                            <PostItVisual debugmode={true} editmode={false} criado={postit.criado} id={postit.id} texto={postit.texto}/>
                         </div >
                     )}
                    <PostItVisual texto="" editmode={true}/>

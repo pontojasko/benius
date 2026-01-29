@@ -20,7 +20,7 @@ export default async function Home() {
             <div></div> {/* div pra dar espaço lateral esquerdo */}
             <div className="flex justify-center"> {/* div pra aglobar tudo e centralizar */}
               <div className="flex-1"></div> {/* div pra dar espaço editavel lateral esquerdo */}
-              <PostItVisual texto={json.texto}/>
+              <PostItVisual debugmode={false} texto={json.texto}/>
               <div className="flex-1"> {/* div pra dar espaço editavel lateral direito */}
               </div>
               </div>
