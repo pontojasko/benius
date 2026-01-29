@@ -6,13 +6,17 @@ import { useRouter } from 'next/navigation';
 interface PostItProps {
   texto: string;
   editmode?: boolean;
+  debugmode?: boolean;
+  id?: string;
 }
+
 
 
 
 export default function PostItVisual(props: PostItProps) {
 
   const [editing, setEditing] = useState(props.editmode);
+  const [debug, setDebug] = useState(props.debugmode);
 
   const edit = () =>{
     // setEditing(true);
@@ -74,12 +78,17 @@ return (
 
 
 
-
+        
 
 
         :
-
-        <p title="Dois cliques para enviar a sua má notícia!" className="text-gameboy-1 text-[clamp(1.5rem,4vmin,2.5rem)] leading-tight tracking-tight text-shadow-minidrop" onDoubleClick={edit}>{props.texto}</p>}
+          <div>                                          
+        <p className="text-gameboy-1 text-[clamp(1.5rem,4vmin,2.5rem)] leading-tight tracking-tight text-shadow-minidrop" onDoubleClick={edit}>{props.texto}</p>
+        
+        {debug ? <p>{props.id}</p>
+        : <p></p>
+        }                                  </div>
+        }
               
               
 

@@ -5,9 +5,8 @@ export default async function Admin(){
     const json = await data.json();
   
     interface postit {
-        id: number
-        texto: string
-
+        id: string;
+        texto: string;
     }
 
 
@@ -21,7 +20,7 @@ export default async function Admin(){
 
                     {json.map((postit:postit) => 
                         <div key={postit.id}>
-                            <PostItVisual editmode={false} texto={postit.texto}/>
+                            <PostItVisual debugmode={true} editmode={false} id={postit.id} texto={postit.texto}/>
                         </div >
                     )}
                    <PostItVisual texto="" editmode={true}/>
