@@ -5,16 +5,23 @@ import { useRouter } from 'next/navigation';
 
 interface PostItProps {
   texto: string;
+  editmode?: boolean;
 }
 
 
 
 export default function PostItVisual(props: PostItProps) {
 
-  const [editing, setEditing] = useState(false);
+  const [editing, setEditing] = useState(props.editmode);
 
   const edit = () =>{
-    setEditing(true);
+    // setEditing(true);
+    if (props.editmode === false){
+      return;
+    }
+    else { 
+    setEditing(true)}
+    
   }
 
   const router = useRouter()

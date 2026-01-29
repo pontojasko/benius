@@ -21,10 +21,10 @@ export default async function Admin(){
 
                     {json.map((postit:postit) => 
                         <div key={postit.id}>
-                            <PostItVisual texto={postit.texto}/>
+                            <PostItVisual editmode={false} texto={postit.texto}/>
                         </div >
                     )}
-                   
+                   <PostItVisual texto="" editmode={true}/>
    
             </div>             
             </div>      
