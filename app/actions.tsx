@@ -22,7 +22,7 @@ export default async function sexo(formData: FormData){
             return;
             }
     
-    const res = await fetch('https://api-benius.jasko.dev/mensagens', opcoes)
+    const res = await fetch('https://api-benius.jasko.dev/mensagem', opcoes)
 
 
     
