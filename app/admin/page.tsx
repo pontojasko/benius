@@ -1,7 +1,7 @@
 import PostItVisual from "../components/post-it-visual";
 
 export default async function Admin(){
-    const data = await fetch('https://api-benius.jasko.dev/mensagens');
+    const data = await fetch('https://api-benius.jasko.dev/mensagens', {cache: 'no-store' })
     const json = await data.json();
   
     interface postit {
